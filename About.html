@@ -1,0 +1,97 @@
+<html>
+
+<head>
+	<title>Attla Pilates Studio</title>
+	<link rel="stylesheet" href="Style\About.css">
+</head>
+
+<body style="background-color: #AB8767">
+	<p id="Pdate" onmouseover="displayDate()" onmouseout="mOut(Pdate)">Current Date</p>
+	<header>
+		<table>
+			<tr >
+				<td colspan="3"  style="text-align:center">
+					<h1 id="header" style="color:#f2972e ">Attlas Pilates Studio</h1>
+				</td>
+			</tr>
+			<tr colspan="3">
+				<td>
+					<table>
+						<tr>
+							<td style="text-align: center" ><a href="about.html">About Us</a></td>
+							<td style="text-align: center"><a href="Home.html" target="_blank">Home</a></td>
+							<td style="text-align: center"><a href="Location.html" target="_blank">Studio Info</a></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="slideshow-container">
+		  <div class="mySlides fade">
+			<img src="Images/AboutImage0.jpg">
+			<div class="text">Toronto Studio</div>
+		  </div>
+		  <div class="mySlides fade">
+			<img src="Images/AboutImage0000.jpg">
+			<div class="text">Montreal Studio</div>
+		  </div>
+		  <div class="mySlides fade">
+			<img src="Images/AboutImage000.jpg">
+			<div class="text">vancouver Studio</div>
+		  </div>
+		</div>
+		<br>
+		<div style="text-align:center;">
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+		</div>
+	</header>
+	<script>
+	var slideIndex = 0;
+	showSlides();
+	function showSlides() {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		slideIndex++;
+		if (slideIndex > slides.length) {slideIndex = 1}
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex-1].style.display = "block";
+		dots[slideIndex-1].className += " active";
+		setTimeout(showSlides, 3000); // Change image every 3 seconds
+	}
+
+	function displayDate() {
+		document.getElementById("Pdate").innerHTML = Date();
+	}
+	function mOut(Pdate) {
+		Pdate.innerHTML = "Current Date";
+	}
+
+	</script>
+	<main>
+	 <h1 id="about">About Our Practice</h1>
+	 <h3> How we got here</h3>
+	 <p >Attlas Pilates Studio is located in Toronto, Montreal,Vancuover
+	   to support and foster the sense of mindfulness and peace
+	   in the surrounding community. We offer a variety of approaches to
+	   achieve and maintain your optimal health. Whether you are experiencing
+	   pain or simply want to improve your physical and mental wellbeing,
+	   Active Pilates Studio provides a healing and friendly environment to do so.
+	 </p>
+	 <br>
+	 <p id="Buddha1" > "What we think, we become"</p>
+	 <p id="Buddha2"> Buddha</p>
+	</main>
+	<footer>
+		<p>&copy; Copyright 2021 Attlas Pilates </p>
+	</footer>
+</body>
+
+</html>

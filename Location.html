@@ -1,0 +1,106 @@
+<html>
+
+<head>
+	<title>Attla Pilates Studio</title>
+	<link rel="stylesheet" href="Style\Location.css">
+	 
+	<script>
+			function cityFunction() {
+				let x = document.getElementById("cityInput").value;
+				let text;
+				if (x=="Toronto"){
+					document.getElementById("demo").innerHTML = "Phone: (905) 709-7958";
+				}
+				else if (x=="Montreal"){
+					document.getElementById("demo").innerHTML = "Phone: (514) 507-4141";
+				}
+				else if (x=="Vancouver"){
+					document.getElementById("demo").innerHTML = "Phone: (604) 733-9991";
+				}
+				else if (x == "") {
+					alert("City must be filled out");
+					return false;
+				}
+				else
+				{
+					text = "Input not valid";
+					document.getElementById("demo").innerHTML = text;
+						
+				} 
+			}
+			function displayDate() {
+			document.getElementById("Pdate").innerHTML = Date();
+			}
+			function mOut(Pdate) {
+			Pdate.innerHTML = "Current Date";
+			}
+		</script>
+</head>
+
+<body style="background-color: #AB8767">
+	<p id="Pdate" onmouseover="displayDate()" onmouseout="mOut(Pdate)">Current Date</p>
+	<header>
+		<table>
+			<tr >
+				<td colspan="3"  style="text-align:center">
+					<h1 id="header" style="color:#f2972e ">Attlas Pilates Studio</h1>
+				</td>
+			</tr>
+			<tr colspan="3">
+				<td>
+					<table>
+						<tr>
+							<td style="text-align: center" ><a href="about.html"  target="_blank">About Us</a></td>
+							<td style="text-align: center"><a href="Home.html" target="_blank">Home</a></td>
+							<td style="text-align: center"><a href="Location.html">Studio Info</a></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<img src="Images/ImageLocation.jpg">
+	</header>
+	<main>
+		<h2 id="contactUs">Contact Us</h2>
+		<p id="gol">Our goal is to offer classes and programs that suit the health needs
+		and fitness experiences of everyone. Contact us to find out more.</p>
+		<br>
+		<br>
+		<div style="text-align:center" >
+			<h3>Choose City </h3>
+			<input id="cityInput">
+			<button type="button" onclick="cityFunction()">Contact Number</button>
+			<p id="demo"></p>
+		</div>
+		<table id="address">
+			<tr id="addressB">
+				<td id="addressBT">City</td>
+				<td id="addressBT">Address</td>
+				<td id="addressBT">Phone</td>
+				<td id="addressBT">Hours</td>
+			</tr>
+			<tr id="addressB">
+				<td id="addressB">Toronto</td>
+				<td id="addressB">301 High Tech Rd, Richmond Hill, ON L4B 4R2</td>
+				<td id="addressB">(905) 709-7958</td>
+				<td id="addressB">Opens 7a.m-9p.m</td>
+			</tr>
+			<tr id="addressB">
+				<td id="addressB">Montreal</td>
+				<td id="addressB">4117 St Laurent Blvd, Montreal, Quebec H2W 1Y7</td>
+				<td id="addressB">(514) 507-4141</td>
+				<td id="addressB">Opens 24 hours</td>
+			</tr>
+				<tr id="addressB">
+				<td id="addressB">Vancouver</td>
+				<td id="addressB">1401 W 8th Ave, Vancouver, BC V6H 1C9</td>
+				<td id="addressB">+1 (604) 733-9991</td>
+				<td id="addressB">Opens 7a.m-5p.m </td>
+			</tr>
+		</table>
+	</main>
+	<footer>
+		<p>&copy; Copyright 2021 Attlas Pilates </p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,125 @@
+body {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 100%;
+width: 990px;
+background-color: #AB8767;
+margin: 15px auto;
+padding: 15px 0;
+/*border: 1px solid black;*/} 
+
+#Pdate{
+	color: #F8E083;
+	text-align:left;
+	font-size:90%;}
+
+
+
+header {
+padding-bottom: 1em;
+/*border-bottom: 2px solid #f2972e;*/
+width: 990px;
+height:500px; }
+
+table {
+padding-bottom: .1em;
+/*border-bottom: 2px solid #f2972e;*/
+width: 990px;
+height:100px; }
+
+header img {
+	width: 990px;
+	height:400px;
+	float: left;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;	}
+	
+a { font-weight: bold; }
+a:link { color: #931420; }
+a:visited { color: #f2972e; }
+a:hover, a:focus { color: blue; }
+
+/* Slideshow container */
+.slideshow-container {
+  width: 900px;
+  position: relative;
+  margin-top: 0em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;}
+
+/* Caption text */
+.text {
+  color: #F8E083;
+  font-size: 15px;
+  position: relative;
+  top:8px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;  }
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #F8E083;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;  }
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+p{
+font-size: 95%;
+padding-bottom: .5em; 
+padding-top: 0.1em;}
+
+#Buddha1{
+	color: #F8E083;
+	text-align:center;
+	font-weight:bold;
+	font-style:italic;}
+
+#Buddha2{
+	color: #F8E083;
+	text-align:center;
+	font-size:90%;}
+
+#about {
+font-size: 170%;
+margin-bottom: .1em;
+margin-top:10em ;}
+
+footer {
+clear: both;
+border-top: 2px solid #f2972e;
+padding-top: .7em; }
+
+footer p {
+font-size: 80%;
+text-align: right;
+margin-right: 20px; }
+
+
+
+

@@ -1,0 +1,84 @@
+<html>
+
+<head>
+	<title>Attla Pilates Studio</title>
+	<link rel="stylesheet" href="Style\Home.css">
+</head>
+
+<body style="background-color: #AB8767">
+	<p id="Pdate" onmouseover="displayDate()" onmouseout="mOut(Pdate)">Current Date</p>
+	<script>
+			function displayDate() {
+			document.getElementById("Pdate").innerHTML = Date();
+			}
+			function mOut(Pdate) {
+			Pdate.innerHTML = "Current Date";
+			}
+	</script>
+	
+	<header>
+		<table>
+			<tr >
+				<td colspan="3"  style="text-align:center">
+					<h1 id="header" style="color:#f2972e ">Attlas Pilates Studio</h1>
+				</td>
+			</tr>
+			<tr colspan="3">
+				<td>
+					<table>
+						<tr>
+							<td style="text-align: center" ><a href="about.html"  target="_blank">About Us</a></td>
+							<td style="text-align: center"><a href="Home.html">Home</a></td>
+							<td style="text-align: center"><a href="Location.html" target="_blank">Studio Info</a></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<img  src="Images\ste.jpg">
+	</header>
+	<main>
+		<aside>
+			<img id="asidePic" src="Images\main1.jpg">
+			<br>
+			<img id="josepPic" src="Images\joepilatesportrait.jpg">
+		</aside>
+		<section>
+			<h1>Pilates: How does it work?</h1>
+			<p>Pilates uses a combination of approximately 50 simple,
+			repetitive exercises to create muscular exertion.
+			Advocates of this system of exercise claim that exercises
+			can be adapted to provide either gentle strength training 
+			for rehabilitation or a strenuous workout vigorous enough
+			to challenge skilled athletes. The exercises are designed 
+			to increase muscle strength and endurance, as well as
+			flexibility and to improve posture and balance.
+			</p>
+			<br>
+			<br>
+			<h2>Health benefits of Pilates</h2>
+			<p>The health benefits of Pilates include:</p>
+			<ul>
+				<li>improved flexibility</li>
+				<li>improved posture</li>
+				<li>rehabilitation or prevention of injuries related to muscle imbalances</li>
+				<li>increased body awareness</li>
+				<li>stress management and relaxation.</li>
+			</ul>
+			<br>
+			<h2>The history of pilates</h2>
+			<p>Pilates was developed by Joseph Pilates, from Mönchengladbach, 
+			Germany. His father was a gymnast and his mother a naturopath.
+            During the first half of the twentieth century, he developed a system 
+			of exercises which were intended to strengthen the human mind and body. 
+			</p>
+			<br>
+			<br>
+			<a id="moreJosep" href="https://www.pilatesfoundation.com/pilates/the-history-of-pilates/" target="_blank">More about Joseph Pilates!</a>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; Copyright 2021 Attlas Pilates </p>
+	</footer>
+</body>
+</html>
